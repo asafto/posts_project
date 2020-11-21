@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 900px;
+}
+
+.card img.card-img-top {
+  height: 359px;
+}
+
+footer {
+  height: 60px;
+}
