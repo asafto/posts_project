@@ -11,7 +11,7 @@ export const posts = [
       writtenBy: 'Rinat Toledano',
       category: 'Cats',
       title: 'Keti clean and clean',
-      article: 'My cat always cleans up, here name is keti',
+      article: 'My cat always cleans up, her name is keti',
       imageUrl: 'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg',
       publishDate: '3/10/2020'
     },
