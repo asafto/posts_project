@@ -1,15 +1,17 @@
-class PromiseService {
-    getDataAsPromise(data, errorMessage) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                if (data.length > 0) {
-                    resolve(data);
-                } else {
-                    reject(errorMessage)
-                }
-            },3000)
-        });
-    }
-}
+export default class PromiseService {
+  loading = true;
 
-export default PromiseService;
+  getDataAsPromise(data, errorMessage) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (data.length > 0) {
+          resolve(data);
+          this.loading = false;
+        } else {
+          reject(errorMessage);
+          this.loading = false;
+        }
+      }, 3000);
+    });
+  }
+}

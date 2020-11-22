@@ -8,10 +8,23 @@ main {
   min-height: 900px;
 }
 
-.card img.card-img-top {
-  height: 359px;
+.card {
+  height: 410px;
+  min-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
 }
 
 footer {
   height: 60px;
+}
+
+footer p {
+  font-size: 12px;
+  text-transform: uppercase;
 }

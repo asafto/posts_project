@@ -34,9 +34,15 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+          <ul class="navbar-nav m-auto pr-5">
+            <li class="nav-item active mx-3 pr-5">
               <a class="nav-link text-white" href="./">Home</a>
+            </li>
+            <li class="nav-item mx-3 pr-5">
+              <a class="nav-link text-white" href="./">About</a>
+            </li>
+            <li class="nav-item mx-3 pr-5">
+              <a class="nav-link text-white" href="./">Contact</a>
             </li>
           </ul>
         </div>
@@ -55,7 +61,7 @@
           <div class="row border-bottom">
             <div class="col-8 text-center m-auto pb-3">
               <div class="alert alert-info" role="alert">
-                Technologies: HTML5, CSS3, Bootstrap, Vanilla Javascript (ES6,
+                Technologies: HTML5, CSS3, Bootstrap, Vanilla Javascript (ES6, Promise,
                 OOP)
               </div>
             </div>
@@ -74,11 +80,11 @@
                 />
                 <div class="input-group-append">
                   <select
-                    name=""
-                    id="category-picker"
-                    class="form-control p-2 input-group-text"
+                    name="category"
+                    id="category"
+                    class="form-control input-group-text"
                   >
-                    <option value="all">All</option>
+                    <option value="">All</option>
                     <option value="Dogs">Dogs</option>
                     <option value="Cats">Cats</option>
                     <option value="Parrots">Parrots</option>
@@ -94,7 +100,12 @@
       </div>
     </main>
 
-    <footer class="bg-info mt-5"></footer>
+    <footer class="bg-info mt-5 pt-4">
+      <p class="text-center text-white mb-0">
+        Asaf Toledano | Fullstack Web Developer &copy;
+        <span class="footer-year"></span>
+      </p>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -112,7 +123,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/7c7e4c6067.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7c7e4c6067.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./app/app.js" type="module"></script>
   </body>
 </html>
